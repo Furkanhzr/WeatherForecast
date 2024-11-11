@@ -21,7 +21,7 @@ class WeatherController extends Controller
                 ],
                 'headers' => [
                     'x-rapidapi-host' => 'ai-weather-by-meteosource.p.rapidapi.com',
-                    'x-rapidapi-key' => '65a1283ddamsh483419574c510c2p12714djsneee15ec485fa',
+                    'x-rapidapi-key' => env('RAPID_API_KEY'),
                 ],
             ]);
             $response = json_decode($response->getBody(), true);
@@ -48,7 +48,7 @@ class WeatherController extends Controller
                 ],
                 'headers' => [
                     'x-rapidapi-host' => 'ai-weather-by-meteosource.p.rapidapi.com',
-                    'x-rapidapi-key' => '65a1283ddamsh483419574c510c2p12714djsneee15ec485fa',
+                    'x-rapidapi-key' => env('RAPID_API_KEY'),
                 ],
             ]);
             $currentDate = Carbon::now();
@@ -74,7 +74,7 @@ class WeatherController extends Controller
             ],
             'headers' => [
                 'x-rapidapi-host' => 'ai-weather-by-meteosource.p.rapidapi.com',
-                'x-rapidapi-key' => '65a1283ddamsh483419574c510c2p12714djsneee15ec485fa',
+                'x-rapidapi-key' => env('RAPID_API_KEY'),
             ],
         ]);
         return json_decode($response->getBody(), true);
