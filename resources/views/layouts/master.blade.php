@@ -18,8 +18,9 @@
 </head>
 <body>
 
-<div class="site-content">
-    <div class="site-header">
+<div class="site-content" style="min-height: 95vh; display: flex;
+            flex-direction: column;">
+    <div class="site-header" style="flex-shrink: 0;">
         <div class="container">
             <a href="{{route('index')}}" class="branding">
                 <img src="{{'template'}}/images/logo.png" alt="" class="logo">
@@ -32,11 +33,11 @@
             <div class="main-navigation">
                 <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
                 <ul class="menu">
-                    <li class="menu-item current-menu-item"><a href="index.html">Anasayfa</a></li>
-                    <li class="menu-item"><a href="{{route('index')}}">Haberler</a></li>
+                    <li class="menu-item current-menu-item"><a href="{{route('index')}}">Anasayfa</a></li>
+                    <!--<li class="menu-item"><a href="{{route('index')}}">Haberler</a></li>
                     <li class="menu-item"><a href="{{route('index')}}">Canlı Kameralar</a></li>
                     <li class="menu-item"><a href="{{route('index')}}">Fotoğraflar</a></li>
-                    <li class="menu-item"><a href="{{route('index')}}">İletişim</a></li>
+                    <li class="menu-item"><a href="{{route('index')}}">İletişim</a></li>-->
                 </ul>
             </div>
 
